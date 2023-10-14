@@ -16,8 +16,10 @@ def esearch_dataset(db, terms, **keywds):
     record = Entrez.read(handle)
     handle.close()
     if int(record["Count"]) < 1:
-        print("No results") # type: ignore
+        logger.info("No results") # type: ignore
     else:
-        print("Results found") # type: ignore
-        print(record["IdList"]) # type: ignore
+        logger.info("Results found : {}".format(record['Count']), feature={record['Count']}) # type: ignore") 
+        logger.info("Ten first results: {}".format(record['IdList'])) # type: ignore") # type: ignore
+        logger.info("====================================END--ESEARCH==================================")
+        return record['IdList'] # type: ignore
         
