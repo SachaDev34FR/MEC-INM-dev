@@ -6,7 +6,8 @@ def run():
     
     pconn.connect_pubmed_database()
     term="green tea AND neoplasms"
-    Esearch.esearch_dataset(ct.DB, term)
+    liste_pmids = Esearch.esearch_dataset(ct.DB, term)
+    print(liste_pmids)
     
     
     
