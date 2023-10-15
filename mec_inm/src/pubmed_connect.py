@@ -29,7 +29,7 @@ def connect_pubmed_database():
     logger.info("Nombres de documents en base :{}".format(result['DbInfo']['Count']), feature={result['DbInfo']['Count']})
     logger.info("Date de la dernière mise à jour Pubmed: {}".format(result['DbInfo']['LastUpdate']), feature={result['DbInfo']['LastUpdate']})
         
-    with open('pubmed_data.txt', 'w') as file:
+    with open('pubmed_fields_datas.txt', 'w') as file:
             handle = Entrez.einfo(db=ct.DB)
             result = Entrez.read(handle)
     
