@@ -8,9 +8,9 @@ def run():
     pconn.connect_pubmed_database()
     terms="green tea AND neoplasms"
     liste_pmids = Esearch.esearch_dataset(ct.DB, terms)
-    liste_journaux = Esearch.get_journal_names(terms)
-    resultats_intervalle_dates = Esearch.esearch_dataset_dates(ct.DB, terms, "2020/01/01", "2023/10//01")
-    crp.create_text_reports(liste_pmids, liste_journaux, resultats_intervalle_dates)
+    resultats_intervalle_dates = Esearch.esearch_dataset_dates(terms, "2023/01/01", "2023/10/01")
+    resultats_intervalle_period = Esearch.esearch_datas_period(terms,180)
+    crp.create_text_reports(liste_pmids, resultats_intervalle_dates,resultats_intervalle_period)
     
     
     
