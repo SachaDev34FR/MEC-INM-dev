@@ -7,7 +7,7 @@ def run():
     
     pconn.connect_pubmed_database()
     terms="green tea AND neoplasms"
-    liste_pmids = Esearch.esearch_dataset(ct.DB, terms)
+    liste_pmids = Esearch.esearch_dataset(terms)
     date_min = '2023/01/01'
     date_max = '2023/10/01'
     period = '180'
