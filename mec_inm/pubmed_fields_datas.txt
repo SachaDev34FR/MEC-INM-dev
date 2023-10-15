@@ -1,0 +1,53 @@
+PubMed bibliographic record
+nombres de documents en base : 36329201
+derniere mise a jour Pubmed: 2023/10/15 00:05
+ALL | All Fields | All terms from all searchable fields, Type Datas : Date-> N, Nombre-> N
+UID | UID | Unique number assigned to publication, Type Datas : Date-> N, Nombre-> Y
+FILT | Filter | Limits the records, Type Datas : Date-> N, Nombre-> N
+TITL | Title | Words in title of publication, Type Datas : Date-> N, Nombre-> N
+MESH | MeSH Terms | Medical Subject Headings assigned to publication, Type Datas : Date-> N, Nombre-> N
+MAJR | MeSH Major Topic | MeSH terms of major importance to publication, Type Datas : Date-> N, Nombre-> N
+JOUR | Journal | Journal abbreviation of publication, Type Datas : Date-> N, Nombre-> N
+AFFL | Affiliation | Author's institutional affiliation and address, Type Datas : Date-> N, Nombre-> N
+ECNO | EC/RN Number | EC number for enzyme or CAS registry number, Type Datas : Date-> N, Nombre-> N
+SUBS | Supplementary Concept | CAS chemical name or MEDLINE Substance Name, Type Datas : Date-> N, Nombre-> N
+PDAT | Date - Publication | Date of publication, Type Datas : Date-> Y, Nombre-> N
+EDAT | Date - Entry | Date publication first accessible through Entrez, Type Datas : Date-> Y, Nombre-> N
+VOL | Volume | Volume number of publication, Type Datas : Date-> N, Nombre-> N
+PAGE | Pagination | Page number(s) of publication, Type Datas : Date-> N, Nombre-> N
+PTYP | Publication Type | Type of publication (e.g., review), Type Datas : Date-> N, Nombre-> N
+LANG | Language | Language of publication, Type Datas : Date-> N, Nombre-> N
+ISS | Issue | Issue number of publication, Type Datas : Date-> N, Nombre-> N
+SUBH | MeSH Subheading | Additional specificity for MeSH term, Type Datas : Date-> N, Nombre-> N
+SI | Secondary Source ID | Cross-reference from publication to other databases, Type Datas : Date-> N, Nombre-> N
+MHDA | Date - MeSH | Date publication was indexed with MeSH terms, Type Datas : Date-> Y, Nombre-> N
+TIAB | Title/Abstract | Free text associated with Abstract/Title, Type Datas : Date-> N, Nombre-> N
+OTRM | Other Term | Other terms associated with publication, Type Datas : Date-> N, Nombre-> N
+COLN | Author - Corporate | Corporate Author of publication, Type Datas : Date-> N, Nombre-> N
+CNTY | Place of Publication | Country of publication, Type Datas : Date-> N, Nombre-> N
+PAPX | Pharmacological Action | MeSH pharmacological action pre-explosions, Type Datas : Date-> N, Nombre-> N
+GRNT | Grants and Funding | NIH Grant Numbers, Type Datas : Date-> N, Nombre-> N
+MDAT | Date - Modification | Date of last modification, Type Datas : Date-> Y, Nombre-> N
+CDAT | Date - Completion | Date of completion, Type Datas : Date-> Y, Nombre-> N
+PID | Publisher ID | Publisher ID, Type Datas : Date-> N, Nombre-> N
+FAUT | Author - First | First Author of publication, Type Datas : Date-> N, Nombre-> N
+FULL | Author | Full Author Name(s) of publication, Type Datas : Date-> N, Nombre-> N
+FINV | Investigator | Full name of investigator, Type Datas : Date-> N, Nombre-> N
+TT | Transliterated Title | Words in transliterated title of publication, Type Datas : Date-> N, Nombre-> N
+LAUT | Author - Last | Last Author of publication, Type Datas : Date-> N, Nombre-> N
+PPDT | Print Publication Date | Date of print publication, Type Datas : Date-> Y, Nombre-> N
+EPDT | Electronic Publication Date | Date of Electronic publication, Type Datas : Date-> Y, Nombre-> N
+LID | Location ID | ELocation ID, Type Datas : Date-> N, Nombre-> N
+CRDT | Date - Create | Date publication first accessible through Entrez, Type Datas : Date-> Y, Nombre-> N
+BOOK | Book | ID of the book that contains the document, Type Datas : Date-> N, Nombre-> N
+ED | Editor | Section's Editor, Type Datas : Date-> N, Nombre-> N
+ISBN | ISBN | ISBN, Type Datas : Date-> N, Nombre-> N
+PUBN | Publisher | Publisher's name, Type Datas : Date-> N, Nombre-> N
+AUCL | Author Cluster ID | Author Cluster ID, Type Datas : Date-> N, Nombre-> N
+EID | Extended PMID | Extended PMID, Type Datas : Date-> N, Nombre-> N
+DSO | DSO | Additional text from the summary, Type Datas : Date-> N, Nombre-> N
+AUID | Author - Identifier | Author Identifier, Type Datas : Date-> N, Nombre-> N
+PS | Subject - Personal Name | Personal Name as Subject, Type Datas : Date-> N, Nombre-> N
+COIS | Conflict of Interest Statements | Conflict of Interest Statements, Type Datas : Date-> N, Nombre-> N
+WORD | Text Word | Free text associated with publication, Type Datas : Date-> N, Nombre-> N
+P1DAT | P1DAT | Date publication first accessible through Solr, Type Datas : Date-> Y, Nombre-> N
