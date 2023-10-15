@@ -5,10 +5,7 @@ import sys
 
 import src.constants as ct
 
-Entrez.api_key = ct.ENTREZ_API_KEY
-Entrez.email = ct.ENTREZ_EMAIL
-Entrez.tool = ct.ENTREZ_TOOL
-
+ct.input_credentials()
 
 def connect_pubmed_database():
     """

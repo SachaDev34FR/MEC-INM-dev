@@ -1,20 +1,16 @@
-from dataclasses import Field
 from Bio import Entrez
 from Bio import Medline
-from attr import field
 from loguru import logger
 import sys
-import requests
 import datetime
 import json
 
 import src.constants as ct
 
-Entrez.api_key = ct.ENTREZ_API_KEY
-Entrez.email = ct.ENTREZ_EMAIL
-Entrez.tool = ct.ENTREZ_TOOL
+ct.input_credentials()
 
-def esearch_dataset(db, terms, **keywds):
+
+def esearch_dataset(terms, **keywds):
     """
     Perform a search on a given database using the provided search terms and optional keyword arguments.
 

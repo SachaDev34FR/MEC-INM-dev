@@ -1,3 +1,6 @@
+from Bio import Entrez
+
+
 # identification 
 
 ENTREZ_API_KEY = "12b30395a61ef72be179af00768997571608"
@@ -9,3 +12,7 @@ DB = "pubmed"
 
 DB2 = "pmc"
 
+def input_credentials():
+    Entrez.api_key = ENTREZ_API_KEY
+    Entrez.email = ENTREZ_EMAIL
+    Entrez.tool = ENTREZ_TOOL
