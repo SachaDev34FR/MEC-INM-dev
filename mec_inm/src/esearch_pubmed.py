@@ -29,16 +29,14 @@ def esearch_dataset(db, terms, **keywds):
     handle = Entrez.esearch(db=ct.DB, term=terms, retype="medline", retmax=10)
     record = Entrez.read(handle)
     handle.close()
-    if int(record["Count"]) < 1:
+    if int(record["Count"]) < 1: # type: ignore
         logger.info("No results") # type: ignore
     else:
-        logger.info("Results found : {}".format(record['Count']), feature={record['Count']}) # type: ignore") 
-        logger.info("Ten first results: {}".format(record['IdList'])) # type: ignore") # type: ignore
-        logger.info("====================================END--ESEARCH==================================")
+        logger.info(f"Results found : {record['Count']}", feature={record['Count']}) # type: ignore
         return record['IdList'] # type: ignore
         
 # fonction a cree esearch pour un intervalle date_min et date_max
-def esearch_dataset_dates(db, terms,date_min, date_max):
+def esearch_dataset_dates(terms,date_min, date_max):
     """
     Searches a dataset within a specified date range.
 
@@ -54,24 +52,42 @@ def esearch_dataset_dates(db, terms,date_min, date_max):
     # date format is YYYY/MM/DD in PubMed
     # Validate date format
     try:
-        datetime.datetime.strptime(date_min, "%Y/%m/%d")
-        datetime.datetime.strptime(date_max, "%Y/%m/%d")
+        date_min = datetime.datetime.strptime(date_min, "%Y/%m/%d")
+        date_max = datetime.datetime.strptime(date_max, "%Y/%m/%d")
     except ValueError:
         logger.error("Invalid date format. Please use YYYY/MM/DD format.")
         return None
-    handle = Entrez.esearch(db=ct.DB, term=terms+f"AND"+f"{date_min}:{date_max}", retype="medline", retmax=10)
+    handle = Entrez.esearch(   # type: ignore
+        db=ct.DB,
+        term=f"{terms}",
+        mindate=date_min,
+        maxdate=date_max,
+        datetype="pdat",
+        retype="medline",
+        retmax=10,
+        )
     record = Entrez.read(handle)
     handle.close()
-    if int(record["Count"]) < 1:
-        logger.info("No results")
+    if int(record["Count"]) < 1: # type: ignore
+        logger.warning("No results for input dates")
     else:
-        logger.info("Results found: {}".format(record['Count']), feature={record['Count']})
-        logger.info("Ten first results: {}".format(record['IdList']))
-        logger.info("====================================END--ESEARCH==================================")
-        return record['IdList']
-    
-# fonction a creer pour esearch pour les free full articles dans Pubmed Centralimport requests
+        logger.info(f"Results found: {record['Count']}", feature={record['Count']}) # type: ignore
+        return record['IdList'] # type: ignore
 
-def get_journal_names(terms):
-    # https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pmc&id={pmc_id}
-    #
+
+def esearch_datas_period(terms, period):
+    handle = Entrez.esearch(   # type: ignore
+        db=ct.DB,
+        term=f"{terms}",
+        reldate=int(period),
+        datetype="pdat",
+        retype="medline",
+        retmax=10,
+        )
+    record = Entrez.read(handle)
+    handle.close()
+    if int(record["Count"]) < 1: # type: ignore
+        logger.warning("No results for input period")
+    else:
+        logger.info(f"Results found: {record['Count']}", feature={record['Count']}) # type: ignore
+        return record['IdList'] # type: ignore

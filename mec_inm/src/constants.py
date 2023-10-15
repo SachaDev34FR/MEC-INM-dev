@@ -6,3 +6,6 @@ ENTREZ_TOOL = "mec-inm"
 
 
 DB = "pubmed"
+
+DB2 = "pmc"
+
