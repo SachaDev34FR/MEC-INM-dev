@@ -30,7 +30,17 @@ def esearch_dataset(terms, **keywds):
     else:
         logger.info(f"Results found : {record['Count']}", feature={record['Count']}) # type: ignore
         return record['IdList'] # type: ignore
-        
+ 
+def esearch_all_dataset(terms):
+    handle = Entrez.esearch(db=ct.DB, term=terms, retype="medline")
+    record = Entrez.read(handle)
+    handle.close()
+    if int(record["Count"]) < 1: # type: ignore
+        logger.info("No results") # type: ignore
+    else:
+        logger.info(f"Results found : {record['Count']}", feature={record['Count']}) # type: ignore
+        return record['IdList'] # type: ignore
+      
 # fonction a cree esearch pour un intervalle date_min et date_max
 def esearch_dataset_dates(terms,date_min, date_max):
     """
