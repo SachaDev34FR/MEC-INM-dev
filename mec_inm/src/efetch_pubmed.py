@@ -27,7 +27,7 @@ def get_pmc_articles_ids(ids):
 def get_author_nationalities(pmid):
         # Récupération des données de l'article
         handle = Entrez.efetch(db="pubmed", id=pmid, rettype="medline", retmode="text")
-        record = Entrez.read(handle)
+        record Entrez.read(handle)
     
         # Récupération des informations sur les auteurs
         authors = record[0].get("FAU", []) # type: ignore
