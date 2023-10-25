@@ -1,11 +1,10 @@
 from dataclasses import Field
 from Bio import Entrez
 from Bio import Medline
-from attr import field
 from loguru import logger
 import sys
 
-import src.constants as ct
+import mec_inm.src.constants as ct
 
 Entrez.api_key = ct.ENTREZ_API_KEY
 Entrez.email = ct.ENTREZ_EMAIL

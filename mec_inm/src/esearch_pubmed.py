@@ -1,14 +1,12 @@
 from dataclasses import Field
 from Bio import Entrez
 from Bio import Medline
-from attr import field
 from loguru import logger
 import sys
-import requests
 import datetime
 import json
 
-import src.constants as ct
+import mec_inm.src.constants as ct
 
 Entrez.api_key = ct.ENTREZ_API_KEY
 Entrez.email = ct.ENTREZ_EMAIL
@@ -72,6 +70,6 @@ def esearch_dataset_dates(db, terms,date_min, date_max):
     
 # fonction a creer pour esearch pour les free full articles dans Pubmed Centralimport requests
 
-def get_journal_names(terms):
+# def get_journal_names(terms):
     # https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pmc&id={pmc_id}
-    #
+    

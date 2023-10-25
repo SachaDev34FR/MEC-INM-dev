@@ -15,7 +15,9 @@ biopython = "^1.81"
 cassandra-driver = "^3.28.0"
 loguru = "^0.7.2"
 
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+main = "mec_inm.main:run"
