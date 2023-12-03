@@ -1,0 +1,122 @@
+2023-10-15T20:21:33.287588-0400 INFO ===================================START===================================
+2023-10-15T20:21:33.288013-0400 INFO Description: PubMed bibliographic record
+2023-10-15T20:21:33.288352-0400 INFO Nombres de documents en base :36329201
+2023-10-15T20:21:33.288682-0400 INFO Date de la dernière mise à jour Pubmed: 2023/10/14 23:59
+2023-10-15T20:21:33.650516-0400 INFO Results found : 4385
+2023-10-15T20:21:33.863282-0400 WARNING No results for input dates
+2023-10-15T20:21:34.080851-0400 INFO Results found: 65
+2023-10-15T20:21:34.286207-0400 INFO Results found : 4385
+2023-10-15T20:22:16.283623-0400 INFO ===================================START===================================
+2023-10-15T20:22:16.283995-0400 INFO Description: PubMed bibliographic record
+2023-10-15T20:22:16.284278-0400 INFO Nombres de documents en base :36329201
+2023-10-15T20:22:16.284546-0400 INFO Date de la dernière mise à jour Pubmed: 2023/10/15 00:07
+2023-10-15T20:22:16.645063-0400 INFO Results found : 4385
+2023-10-15T20:22:16.847530-0400 WARNING No results for input dates
+2023-10-15T20:22:17.040143-0400 INFO Results found: 65
+2023-10-15T20:22:17.246923-0400 INFO Results found : 4385
+2023-10-15T20:22:17.630530-0400 INFO Nombres de publications: 20
+2023-10-15T20:22:17.631421-0400 INFO Nombre de Champs: 41
+2023-10-15T20:22:17.634071-0400 INFO valeurs nulles ou non attribuees dqns le tableau: PMID     0
+OWN      0
+STAT     0
+DCOM     1
+LR       0
+IS       0
+VI       0
+IP       1
+DP       0
+TI       0
+PG       5
+LID      0
+AB       0
+CI      13
+FAU      0
+AU       0
+AUID     9
+AD       0
+LA       0
+GR      15
+PT       0
+DEP      3
+PL       0
+TA       0
+JT       0
+JID      0
+RN       2
+SB       0
+MH       1
+PMC      8
+OTO      5
+OT       5
+COIS     7
+EDAT     0
+MHDA     0
+CRDT     0
+PHST     0
+AID      0
+PST      0
+SO       0
+SI      19
+dtype: int64
+2023-10-15T20:22:17.635479-0400 INFO liste des champs :Index(['PMID', 'OWN', 'STAT', 'DCOM', 'LR', 'IS', 'VI', 'IP', 'DP', 'TI', 'PG',
+       'LID', 'AB', 'CI', 'FAU', 'AU', 'AUID', 'AD', 'LA', 'GR', 'PT', 'DEP',
+       'PL', 'TA', 'JT', 'JID', 'RN', 'SB', 'MH', 'PMC', 'OTO', 'OT', 'COIS',
+       'EDAT', 'MHDA', 'CRDT', 'PHST', 'AID', 'PST', 'SO', 'SI'],
+      dtype='object')
+2023-10-15T20:24:32.254710-0400 INFO ===================================START===================================
+2023-10-15T20:24:32.255070-0400 INFO Description: PubMed bibliographic record
+2023-10-15T20:24:32.255399-0400 INFO Nombres de documents en base :36329201
+2023-10-15T20:24:32.255666-0400 INFO Date de la dernière mise à jour Pubmed: 2023/10/15 02:03
+2023-10-15T20:24:32.583277-0400 INFO Results found : 4385
+2023-10-15T20:24:32.818974-0400 WARNING No results for input dates
+2023-10-15T20:24:33.027589-0400 INFO Results found: 65
+2023-10-15T20:24:33.241779-0400 INFO Results found : 4385
+2023-10-15T20:24:33.621702-0400 INFO Nombres de publications: 20
+2023-10-15T20:24:33.622386-0400 INFO Nombre de Champs: 41
+2023-10-15T20:24:33.623979-0400 INFO valeurs nulles ou non attribuees dqns le tableau: PMID     0
+OWN      0
+STAT     0
+DCOM     1
+LR       0
+IS       0
+VI       0
+IP       1
+DP       0
+TI       0
+PG       5
+LID      0
+AB       0
+CI      13
+FAU      0
+AU       0
+AUID     9
+AD       0
+LA       0
+GR      15
+PT       0
+DEP      3
+PL       0
+TA       0
+JT       0
+JID      0
+RN       2
+SB       0
+MH       1
+PMC      8
+OTO      5
+OT       5
+COIS     7
+EDAT     0
+MHDA     0
+CRDT     0
+PHST     0
+AID      0
+PST      0
+SO       0
+SI      19
+dtype: int64
+2023-10-15T20:24:33.625386-0400 INFO liste des champs :Index(['PMID', 'OWN', 'STAT', 'DCOM', 'LR', 'IS', 'VI', 'IP', 'DP', 'TI', 'PG',
+       'LID', 'AB', 'CI', 'FAU', 'AU', 'AUID', 'AD', 'LA', 'GR', 'PT', 'DEP',
+       'PL', 'TA', 'JT', 'JID', 'RN', 'SB', 'MH', 'PMC', 'OTO', 'OT', 'COIS',
+       'EDAT', 'MHDA', 'CRDT', 'PHST', 'AID', 'PST', 'SO', 'SI'],
+      dtype='object')

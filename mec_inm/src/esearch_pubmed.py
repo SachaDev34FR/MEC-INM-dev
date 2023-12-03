@@ -1,20 +1,16 @@
-from dataclasses import Field
 from Bio import Entrez
 from Bio import Medline
-from attr import field
 from loguru import logger
 import sys
-import requests
 import datetime
 import json
 
 import src.constants as ct
 
-Entrez.api_key = ct.ENTREZ_API_KEY
-Entrez.email = ct.ENTREZ_EMAIL
-Entrez.tool = ct.ENTREZ_TOOL
+ct.input_credentials()
 
-def esearch_dataset(db, terms, **keywds):
+
+def esearch_dataset(terms, **keywds):
     """
     Perform a search on a given database using the provided search terms and optional keyword arguments.
 
@@ -34,7 +30,17 @@ def esearch_dataset(db, terms, **keywds):
     else:
         logger.info(f"Results found : {record['Count']}", feature={record['Count']}) # type: ignore
         return record['IdList'] # type: ignore
-        
+ 
+def esearch_all_dataset(terms):
+    handle = Entrez.esearch(db=ct.DB, term=terms, retype="medline")
+    record = Entrez.read(handle)
+    handle.close()
+    if int(record["Count"]) < 1: # type: ignore
+        logger.info("No results") # type: ignore
+    else:
+        logger.info(f"Results found : {record['Count']}", feature={record['Count']}) # type: ignore
+        return record['IdList'] # type: ignore
+      
 # fonction a cree esearch pour un intervalle date_min et date_max
 def esearch_dataset_dates(terms,date_min, date_max):
     """
