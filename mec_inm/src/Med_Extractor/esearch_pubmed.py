@@ -58,7 +58,7 @@ def esearch_dataset_dates(terms,date_min, date_max):
     # date format is YYYY/MM/DD in PubMed
     # Validate date format
     try:
-        date_min = datetime.datetime.strptime(date_min, "%Y/%m/%d")
+        date_min = datetime.datetime.strptime(date_min, "%Y/%m/%d")   # verifier le formmat des dates de medline 
         date_max = datetime.datetime.strptime(date_max, "%Y/%m/%d")
     except ValueError:
         logger.error("Invalid date format. Please use YYYY/MM/DD format.")

@@ -18,7 +18,7 @@ def connect_pubmed_database():
     result = Entrez.read(handle)
 
     logger.add(sys.stderr, level='INFO', format= "{time} {level} {message}")
-    logger.add("mec-inm_logs.log", level='INFO', format= "{time} {level} {message}")
+    logger.add("src/mec-inm_logs.log", level='INFO', format= "{time} {level} {message}")
     logger.info("===================================START===================================")
     logger.info("Description: {}".format(result['DbInfo']['Description'], feature={result['DbInfo']['Description']}))
     logger.info(

@@ -1,6 +1,6 @@
 PubMed bibliographic record
-nombres de documents en base : 36329201
-derniere mise a jour Pubmed: 2023/10/14 23:02
+nombres de documents en base : 36528241
+derniere mise a jour Pubmed: 2023/12/01 22:17
 ALL | All Fields | All terms from all searchable fields, Type Datas : Date-> N, Nombre-> N
 UID | UID | Unique number assigned to publication, Type Datas : Date-> N, Nombre-> Y
 FILT | Filter | Limits the records, Type Datas : Date-> N, Nombre-> N

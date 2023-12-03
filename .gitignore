@@ -1,0 +1,10 @@
+# Ignorer le dossier "chores"
+chores/
+
+# Ignorer le fichier "secrets.txt"
+notes.txt
+
+# Ignorer tous les fichiers avec l'extension ".log"
+*.log
+*.ipynb
+*.xlsx
